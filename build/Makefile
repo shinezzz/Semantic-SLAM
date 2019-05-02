@@ -124,17 +124,17 @@ slambase/fast:
 .PHONY : slambase/fast
 
 #=============================================================================
-# Target rules for targets named slamEnd
+# Target rules for targets named detectFeatures
 
 # Build rule for target.
-slamEnd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 slamEnd
-.PHONY : slamEnd
+detectFeatures: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detectFeatures
+.PHONY : detectFeatures
 
 # fast build rule for target.
-slamEnd/fast:
-	$(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/build
-.PHONY : slamEnd/fast
+detectFeatures/fast:
+	$(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
+.PHONY : detectFeatures/fast
 
 #=============================================================================
 # Target rules for targets named slam
@@ -149,6 +149,19 @@ slam/fast:
 	$(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/build
 .PHONY : slam/fast
 
+#=============================================================================
+# Target rules for targets named slamTum
+
+# Build rule for target.
+slamTum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slamTum
+.PHONY : slamTum
+
+# fast build rule for target.
+slamTum/fast:
+	$(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/build
+.PHONY : slamTum/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,8 +171,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... slambase"
-	@echo "... slamEnd"
+	@echo "... detectFeatures"
 	@echo "... slam"
+	@echo "... slamTum"
 .PHONY : help
 
 

@@ -52,6 +52,7 @@ int main( int argc, char** argv )
     ParameterReader pd;
     int startIndex  =   atoi( pd.getData( "start_index" ).c_str() );
     int endIndex    =   atoi( pd.getData( "end_index"   ).c_str() );
+    string rgbDirMask   =   pd.getData("rgb_dir_mask")
 
     // 所有的关键帧都放在了这里
     vector< FRAME > keyframes; 
@@ -66,10 +67,6 @@ int main( int argc, char** argv )
     computeKeyPointsAndDesp( currFrame, detector, descriptor );
     PointCloud::Ptr cloud = image2PointCloud( currFrame.rgb, currFrame.depth, camera );
 
-    // 增加显示点云，显示点云会降低速度
-    pcl::visualization::CloudViewer viewer("viewer");
-    bool visualize = pd.getData("visualize_pointcloud")==string("yes");
-    
     /******************************* 
     // 新增:有关g2o的初始化
     *******************************/
@@ -131,6 +128,9 @@ int main( int argc, char** argv )
                 checkNearbyLoops( keyframes, currFrame, globalOptimizer );
                 checkRandomLoops( keyframes, currFrame, globalOptimizer );
             }
+            // 在这边把currFrame.rgb改成maskrcnn的处理之后的rgb图像
+            // currFrame.rgb = cv::imread()
+
             keyframes.push_back( currFrame );
             
             break;
@@ -166,6 +166,8 @@ int main( int argc, char** argv )
         // 从g2o里取出一帧
         g2o::VertexSE3* vertex = dynamic_cast<g2o::VertexSE3*>(globalOptimizer.vertex( keyframes[i].frameID ));
         Eigen::Isometry3d pose = vertex->estimate(); //该帧优化后的位姿
+
+        
         PointCloud::Ptr newCloud = image2PointCloud( keyframes[i].rgb, keyframes[i].depth, camera ); //转成点云
         // 以下是滤波
         voxel.setInputCloud( newCloud );
@@ -174,10 +176,10 @@ int main( int argc, char** argv )
         pass.filter( *newCloud );
 
         // 显示点云
-        if ( visualize == true )
-        {
-            viewer.showCloud( tmp );
-        }
+        // if ( visualize == true )
+        // {
+        //     viewer.showCloud( tmp );
+        // }
 
         // 把点云变换后加入全局地图中
         pcl::transformPointCloud( *newCloud, *tmp, pose.matrix() );
@@ -221,6 +223,7 @@ FRAME readFrame( int index, ParameterReader& pd )
     f.frameID = index;
     return f;
 }
+// 读取关键帧的mask rgb图像
 
 double normofTransform( cv::Mat rvec, cv::Mat tvec )
 {
@@ -241,6 +244,7 @@ CHECK_RESULT checkKeyframes( FRAME& f1, FRAME& f2, g2o::SparseOptimizer& opti, b
         return NOT_MATCHED;
     // 计算运动范围是否太大
     double norm = normofTransform(result.rvec, result.tvec);
+    cout << "norm of trasform:" << norm << endl;
     if ( is_loops == false )
     {
         if ( norm >= max_norm )

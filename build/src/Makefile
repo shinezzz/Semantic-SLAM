@@ -126,19 +126,19 @@ slambase/fast:
 .PHONY : slambase/fast
 
 # Convenience name for target.
-src/CMakeFiles/slamEnd.dir/rule:
-	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slamEnd.dir/rule
-.PHONY : src/CMakeFiles/slamEnd.dir/rule
+src/CMakeFiles/detectFeatures.dir/rule:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/detectFeatures.dir/rule
+.PHONY : src/CMakeFiles/detectFeatures.dir/rule
 
 # Convenience name for target.
-slamEnd: src/CMakeFiles/slamEnd.dir/rule
+detectFeatures: src/CMakeFiles/detectFeatures.dir/rule
 
-.PHONY : slamEnd
+.PHONY : detectFeatures
 
 # fast build rule for target.
-slamEnd/fast:
-	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/build
-.PHONY : slamEnd/fast
+detectFeatures/fast:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
+.PHONY : detectFeatures/fast
 
 # Convenience name for target.
 src/CMakeFiles/slam.dir/rule:
@@ -154,6 +154,48 @@ slam: src/CMakeFiles/slam.dir/rule
 slam/fast:
 	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/build
 .PHONY : slam/fast
+
+# Convenience name for target.
+src/CMakeFiles/slamTum.dir/rule:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slamTum.dir/rule
+.PHONY : src/CMakeFiles/slamTum.dir/rule
+
+# Convenience name for target.
+slamTum: src/CMakeFiles/slamTum.dir/rule
+
+.PHONY : slamTum
+
+# fast build rule for target.
+slamTum/fast:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/build
+.PHONY : slamTum/fast
+
+detectFeatures.o: detectFeatures.cpp.o
+
+.PHONY : detectFeatures.o
+
+# target to build an object file
+detectFeatures.cpp.o:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.o
+.PHONY : detectFeatures.cpp.o
+
+detectFeatures.i: detectFeatures.cpp.i
+
+.PHONY : detectFeatures.i
+
+# target to preprocess a source file
+detectFeatures.cpp.i:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.i
+.PHONY : detectFeatures.cpp.i
+
+detectFeatures.s: detectFeatures.cpp.s
+
+.PHONY : detectFeatures.s
+
+# target to generate assembly for a file
+detectFeatures.cpp.s:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.s
+.PHONY : detectFeatures.cpp.s
 
 slam.o: slam.cpp.o
 
@@ -209,32 +251,32 @@ slamBase.cpp.s:
 	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.s
 .PHONY : slamBase.cpp.s
 
-slamEnd.o: slamEnd.cpp.o
+slamTum.o: slamTum.cpp.o
 
-.PHONY : slamEnd.o
+.PHONY : slamTum.o
 
 # target to build an object file
-slamEnd.cpp.o:
-	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/slamEnd.cpp.o
-.PHONY : slamEnd.cpp.o
+slamTum.cpp.o:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/slamTum.cpp.o
+.PHONY : slamTum.cpp.o
 
-slamEnd.i: slamEnd.cpp.i
+slamTum.i: slamTum.cpp.i
 
-.PHONY : slamEnd.i
+.PHONY : slamTum.i
 
 # target to preprocess a source file
-slamEnd.cpp.i:
-	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/slamEnd.cpp.i
-.PHONY : slamEnd.cpp.i
+slamTum.cpp.i:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/slamTum.cpp.i
+.PHONY : slamTum.cpp.i
 
-slamEnd.s: slamEnd.cpp.s
+slamTum.s: slamTum.cpp.s
 
-.PHONY : slamEnd.s
+.PHONY : slamTum.s
 
 # target to generate assembly for a file
-slamEnd.cpp.s:
-	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamEnd.dir/build.make src/CMakeFiles/slamEnd.dir/slamEnd.cpp.s
-.PHONY : slamEnd.cpp.s
+slamTum.cpp.s:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/slamTum.cpp.s
+.PHONY : slamTum.cpp.s
 
 # Help Target
 help:
@@ -243,19 +285,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... slambase"
-	@echo "... slamEnd"
-	@echo "... slam"
 	@echo "... rebuild_cache"
+	@echo "... slambase"
+	@echo "... detectFeatures"
+	@echo "... slam"
+	@echo "... slamTum"
+	@echo "... detectFeatures.o"
+	@echo "... detectFeatures.i"
+	@echo "... detectFeatures.s"
 	@echo "... slam.o"
 	@echo "... slam.i"
 	@echo "... slam.s"
 	@echo "... slamBase.o"
 	@echo "... slamBase.i"
 	@echo "... slamBase.s"
-	@echo "... slamEnd.o"
-	@echo "... slamEnd.i"
-	@echo "... slamEnd.s"
+	@echo "... slamTum.o"
+	@echo "... slamTum.i"
+	@echo "... slamTum.s"
 .PHONY : help
 
 
