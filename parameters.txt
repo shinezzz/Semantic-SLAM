@@ -18,17 +18,17 @@ camera.scale=1000.0;
 # 数据相关
 # 起始与终止索引
 start_index=1
-end_index=780
+end_index=80
 # 数据所在目录
-rgb_dir_tum=/home/zhouhao/GraduationProject/data/rgbd_dataset_freiburg1_room/
+rgb_dir_tum=/home/zhouhao/GraduationProject/data/rgbd_dataset_freiburg1_teddy/
 rgb_dir=/home/zhouhao/GraduationProject/data/rgb_png/
-rgb_dir_mask = /home/zhouhao/GraduationProject/data/rgb_png_mask/
+rgb_dir_mask=/home/zhouhao/GraduationProject/data/rgb_png_mask_9/
 rgb_extension=.png
 depth_dir=/home/zhouhao/GraduationProject/data/depth_png/
-depth_dir_tum=/home/zhouhao/GraduationProject/data/rgbd_dataset_freiburg1_room/
+depth_dir_tum=/home/zhouhao/GraduationProject/data/rgbd_dataset_freiburg1_teddy/
 depth_extension=.png
 # 点云分辨率
-voxel_grid=0.005
+voxel_grid=0.01
 # 是否实时可视化
 visualize_pointcloud=yes
 # 最小匹配数量
@@ -36,7 +36,7 @@ min_good_match=10
 # 最小内点
 min_inliers=5
 # 最大运动误差
-max_norm=0.3
+max_norm=0.4
 
 # part 7
 keyframe_threshold=0.1

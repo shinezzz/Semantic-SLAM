@@ -52,7 +52,8 @@ int main( int argc, char** argv )
     ParameterReader pd;
     int startIndex  =   atoi( pd.getData( "start_index" ).c_str() );
     int endIndex    =   atoi( pd.getData( "end_index"   ).c_str() );
-    string rgbDirMask   =   pd.getData("rgb_dir_mask")
+    string rgbDirMask   =   pd.getData("rgb_dir_mask");
+    string rgbDirMaskExten = pd.getData("rgb_extension");
 
     // 所有的关键帧都放在了这里
     vector< FRAME > keyframes; 
@@ -129,7 +130,9 @@ int main( int argc, char** argv )
                 checkRandomLoops( keyframes, currFrame, globalOptimizer );
             }
             // 在这边把currFrame.rgb改成maskrcnn的处理之后的rgb图像
-            // currFrame.rgb = cv::imread()
+            currFrame.rgb = cv::imread(rgbDirMask+to_string(currIndex) + rgbDirMaskExten);
+            // cv::imshow("test",currFrame.rgb);
+            // cv::waitKey(0);
 
             keyframes.push_back( currFrame );
             

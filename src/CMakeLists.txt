@@ -54,4 +54,10 @@ TARGET_LINK_LIBRARIES( slamTum
     ${OpenCV_LIBS}
     ${PCL_LIBRARIES}
     g2o_core g2o_types_slam3d g2o_solver_csparse g2o_stuff g2o_csparse_extension ${CSPARSE_LIBRARY})
+ADD_EXECUTABLE( test test.cpp )
+TARGET_LINK_LIBRARIES( test
+    slambase
+    ${OpenCV_LIBS}
+    ${PCL_LIBRARIES}
+    g2o_core g2o_types_slam3d g2o_solver_csparse g2o_stuff g2o_csparse_extension ${CSPARSE_LIBRARY})
 
