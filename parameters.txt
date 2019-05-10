@@ -18,14 +18,14 @@ camera.scale=1000.0;
 # 数据相关
 # 起始与终止索引
 start_index=1
-end_index=80
+end_index=750
 # 数据所在目录
-rgb_dir_tum=/home/zhouhao/GraduationProject/data/test1/
+rgb_dir_tum=/home/zhouhao/GraduationProject/data/test6Half/
 rgb_dir=/home/zhouhao/GraduationProject/data/rgb_png/
 rgb_dir_mask=/home/zhouhao/GraduationProject/data/rgb_png_mask_9/
 rgb_extension=.png
 depth_dir=/home/zhouhao/GraduationProject/data/depth_png/
-depth_dir_tum=/home/zhouhao/GraduationProject/data/test1/
+depth_dir_tum=/home/zhouhao/GraduationProject/data/test6Half/
 depth_extension=.png
 # 点云分辨率
 voxel_grid=0.01
