@@ -18,8 +18,8 @@ using namespace std;
 int main( int argc, char** argv )
 {
     // 声明并从data文件夹里读取两个rgb与深度图
-    cv::Mat rgb1 = cv::imread( "/home/zhouhao/GraduationProject/data/rgbd_dataset_freiburg1_room/rgb/1305031913.665421.png");
-    cv::Mat rgb2 = cv::imread( "/home/zhouhao/GraduationProject/data/rgbd_dataset_freiburg1_room/rgb/1305031913.633293.png");
+    cv::Mat rgb1 = cv::imread( "./data/1.png");
+    cv::Mat rgb2 = cv::imread( "./data/2.png");
     cv::Mat depth1 = cv::imread( "./data/depth1.png", -1);
     cv::Mat depth2 = cv::imread( "./data/depth2.png", -1);
 
@@ -81,7 +81,7 @@ int main( int argc, char** argv )
 
     for ( size_t i=0; i<matches.size(); i++ )
     {
-        if (matches[i].distance < 15*minDis)
+        if (matches[i].distance < 5*minDis)
             goodMatches.push_back( matches[i] );
     }
 
