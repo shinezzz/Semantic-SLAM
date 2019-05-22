@@ -17,8 +17,8 @@ def ListFilesToTxt(dir,file,wildcard,recursion):
                     break
 
 def Test():
-    dir="/home/zhouhao/GraduationProject/data/test6Half/" + typename     #文件路径
-    outfile=typename + "6.txt"                     #写入的txt文件名
+    dir="/home/zhouhao/GraduationProject/data/test1dachen/" + typename     #文件路径
+    outfile=typename + "1.txt"                     #写入的txt文件名
     wildcard = ".jpg .txt .exe .dll .lib .png"      #要读取的文件类型；
 
     file = open(outfile,"w")
