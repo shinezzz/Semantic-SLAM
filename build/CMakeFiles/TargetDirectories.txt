@@ -2,8 +2,10 @@
 /home/zhouhao/GraduationProject/ASlam/build/CMakeFiles/rebuild_cache.dir
 /home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/edit_cache.dir
 /home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/rebuild_cache.dir
-/home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/test.dir
+/home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/slamTum.dir
 /home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/slambase.dir
+/home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/slamTumDense.dir
 /home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/detectFeatures.dir
 /home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/slam.dir
-/home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/slamTum.dir
+/home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/test.dir
+/home/zhouhao/GraduationProject/ASlam/build/src/CMakeFiles/slamDense.dir

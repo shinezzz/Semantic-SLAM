@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named slamTum
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+slamTum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slamTum
+.PHONY : slamTum
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/build
-.PHONY : test/fast
+slamTum/fast:
+	$(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/build
+.PHONY : slamTum/fast
 
 #=============================================================================
 # Target rules for targets named slambase
@@ -135,6 +135,19 @@ slambase: cmake_check_build_system
 slambase/fast:
 	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
 .PHONY : slambase/fast
+
+#=============================================================================
+# Target rules for targets named slamTumDense
+
+# Build rule for target.
+slamTumDense: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slamTumDense
+.PHONY : slamTumDense
+
+# fast build rule for target.
+slamTumDense/fast:
+	$(MAKE) -f src/CMakeFiles/slamTumDense.dir/build.make src/CMakeFiles/slamTumDense.dir/build
+.PHONY : slamTumDense/fast
 
 #=============================================================================
 # Target rules for targets named detectFeatures
@@ -163,17 +176,30 @@ slam/fast:
 .PHONY : slam/fast
 
 #=============================================================================
-# Target rules for targets named slamTum
+# Target rules for targets named test
 
 # Build rule for target.
-slamTum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 slamTum
-.PHONY : slamTum
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-slamTum/fast:
-	$(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/build
-.PHONY : slamTum/fast
+test/fast:
+	$(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named slamDense
+
+# Build rule for target.
+slamDense: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slamDense
+.PHONY : slamDense
+
+# fast build rule for target.
+slamDense/fast:
+	$(MAKE) -f src/CMakeFiles/slamDense.dir/build.make src/CMakeFiles/slamDense.dir/build
+.PHONY : slamDense/fast
 
 # Help Target
 help:
@@ -183,11 +209,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
+	@echo "... slamTum"
 	@echo "... slambase"
+	@echo "... slamTumDense"
 	@echo "... detectFeatures"
 	@echo "... slam"
-	@echo "... slamTum"
+	@echo "... test"
+	@echo "... slamDense"
 .PHONY : help
 
 

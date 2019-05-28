@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/test.dir/rule:
-	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test.dir/rule
-.PHONY : src/CMakeFiles/test.dir/rule
+src/CMakeFiles/slamTum.dir/rule:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slamTum.dir/rule
+.PHONY : src/CMakeFiles/slamTum.dir/rule
 
 # Convenience name for target.
-test: src/CMakeFiles/test.dir/rule
+slamTum: src/CMakeFiles/slamTum.dir/rule
 
-.PHONY : test
+.PHONY : slamTum
 
 # fast build rule for target.
-test/fast:
-	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/build
-.PHONY : test/fast
+slamTum/fast:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/build
+.PHONY : slamTum/fast
 
 # Convenience name for target.
 src/CMakeFiles/slambase.dir/rule:
@@ -139,6 +139,21 @@ slambase: src/CMakeFiles/slambase.dir/rule
 slambase/fast:
 	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
 .PHONY : slambase/fast
+
+# Convenience name for target.
+src/CMakeFiles/slamTumDense.dir/rule:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slamTumDense.dir/rule
+.PHONY : src/CMakeFiles/slamTumDense.dir/rule
+
+# Convenience name for target.
+slamTumDense: src/CMakeFiles/slamTumDense.dir/rule
+
+.PHONY : slamTumDense
+
+# fast build rule for target.
+slamTumDense/fast:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTumDense.dir/build.make src/CMakeFiles/slamTumDense.dir/build
+.PHONY : slamTumDense/fast
 
 # Convenience name for target.
 src/CMakeFiles/detectFeatures.dir/rule:
@@ -171,19 +186,34 @@ slam/fast:
 .PHONY : slam/fast
 
 # Convenience name for target.
-src/CMakeFiles/slamTum.dir/rule:
-	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slamTum.dir/rule
-.PHONY : src/CMakeFiles/slamTum.dir/rule
+src/CMakeFiles/test.dir/rule:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test.dir/rule
+.PHONY : src/CMakeFiles/test.dir/rule
 
 # Convenience name for target.
-slamTum: src/CMakeFiles/slamTum.dir/rule
+test: src/CMakeFiles/test.dir/rule
 
-.PHONY : slamTum
+.PHONY : test
 
 # fast build rule for target.
-slamTum/fast:
-	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/build
-.PHONY : slamTum/fast
+test/fast:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+# Convenience name for target.
+src/CMakeFiles/slamDense.dir/rule:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slamDense.dir/rule
+.PHONY : src/CMakeFiles/slamDense.dir/rule
+
+# Convenience name for target.
+slamDense: src/CMakeFiles/slamDense.dir/rule
+
+.PHONY : slamDense
+
+# fast build rule for target.
+slamDense/fast:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamDense.dir/build.make src/CMakeFiles/slamDense.dir/build
+.PHONY : slamDense/fast
 
 detectFeatures.o: detectFeatures.cpp.o
 
@@ -266,6 +296,33 @@ slamBase.cpp.s:
 	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.s
 .PHONY : slamBase.cpp.s
 
+slamDense.o: slamDense.cpp.o
+
+.PHONY : slamDense.o
+
+# target to build an object file
+slamDense.cpp.o:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamDense.dir/build.make src/CMakeFiles/slamDense.dir/slamDense.cpp.o
+.PHONY : slamDense.cpp.o
+
+slamDense.i: slamDense.cpp.i
+
+.PHONY : slamDense.i
+
+# target to preprocess a source file
+slamDense.cpp.i:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamDense.dir/build.make src/CMakeFiles/slamDense.dir/slamDense.cpp.i
+.PHONY : slamDense.cpp.i
+
+slamDense.s: slamDense.cpp.s
+
+.PHONY : slamDense.s
+
+# target to generate assembly for a file
+slamDense.cpp.s:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamDense.dir/build.make src/CMakeFiles/slamDense.dir/slamDense.cpp.s
+.PHONY : slamDense.cpp.s
+
 slamTum.o: slamTum.cpp.o
 
 .PHONY : slamTum.o
@@ -292,6 +349,33 @@ slamTum.s: slamTum.cpp.s
 slamTum.cpp.s:
 	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTum.dir/build.make src/CMakeFiles/slamTum.dir/slamTum.cpp.s
 .PHONY : slamTum.cpp.s
+
+slamTumDense.o: slamTumDense.cpp.o
+
+.PHONY : slamTumDense.o
+
+# target to build an object file
+slamTumDense.cpp.o:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTumDense.dir/build.make src/CMakeFiles/slamTumDense.dir/slamTumDense.cpp.o
+.PHONY : slamTumDense.cpp.o
+
+slamTumDense.i: slamTumDense.cpp.i
+
+.PHONY : slamTumDense.i
+
+# target to preprocess a source file
+slamTumDense.cpp.i:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTumDense.dir/build.make src/CMakeFiles/slamTumDense.dir/slamTumDense.cpp.i
+.PHONY : slamTumDense.cpp.i
+
+slamTumDense.s: slamTumDense.cpp.s
+
+.PHONY : slamTumDense.s
+
+# target to generate assembly for a file
+slamTumDense.cpp.s:
+	cd /home/zhouhao/GraduationProject/ASlam/build && $(MAKE) -f src/CMakeFiles/slamTumDense.dir/build.make src/CMakeFiles/slamTumDense.dir/slamTumDense.cpp.s
+.PHONY : slamTumDense.cpp.s
 
 test.o: test.cpp.o
 
@@ -328,11 +412,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
+	@echo "... slamTum"
 	@echo "... slambase"
+	@echo "... slamTumDense"
 	@echo "... detectFeatures"
 	@echo "... slam"
-	@echo "... slamTum"
+	@echo "... test"
+	@echo "... slamDense"
 	@echo "... detectFeatures.o"
 	@echo "... detectFeatures.i"
 	@echo "... detectFeatures.s"
@@ -342,9 +428,15 @@ help:
 	@echo "... slamBase.o"
 	@echo "... slamBase.i"
 	@echo "... slamBase.s"
+	@echo "... slamDense.o"
+	@echo "... slamDense.i"
+	@echo "... slamDense.s"
 	@echo "... slamTum.o"
 	@echo "... slamTum.i"
 	@echo "... slamTum.s"
+	@echo "... slamTumDense.o"
+	@echo "... slamTumDense.i"
+	@echo "... slamTumDense.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

@@ -251,9 +251,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/test.dir/DependInfo.cmake"
+  "src/CMakeFiles/slamTum.dir/DependInfo.cmake"
   "src/CMakeFiles/slambase.dir/DependInfo.cmake"
+  "src/CMakeFiles/slamTumDense.dir/DependInfo.cmake"
   "src/CMakeFiles/detectFeatures.dir/DependInfo.cmake"
   "src/CMakeFiles/slam.dir/DependInfo.cmake"
-  "src/CMakeFiles/slamTum.dir/DependInfo.cmake"
+  "src/CMakeFiles/test.dir/DependInfo.cmake"
+  "src/CMakeFiles/slamDense.dir/DependInfo.cmake"
   )

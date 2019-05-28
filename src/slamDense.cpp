@@ -130,7 +130,7 @@ int main( int argc, char** argv )
                 checkRandomLoops( keyframes, currFrame, globalOptimizer );
             }
             // 在这边把currFrame.rgb改成maskrcnn的处理之后的rgb图像
-            currFrame.rgb = cv::imread(rgbDirMask+to_string(currIndex) + rgbDirMaskExten);
+            // currFrame.rgb = cv::imread(rgbDirMask+to_string(currIndex) + rgbDirMaskExten);
             // cv::imshow("test",currFrame.rgb);
             // cv::waitKey(0);
 

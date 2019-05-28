@@ -150,8 +150,8 @@ int main( int argc, char** argv )
                 checkRandomLoops( keyframes, currFrame, globalOptimizer );
             }
             // 关键帧用mask图像取代原有rgb图像
-            cout<<rgbDirMask<<vstrImageFilenamesRGB[currIndex]<<endl;
-            currFrame.rgb = cv::imread(rgbDirMask+vstrImageFilenamesRGB[currIndex]);
+            // cout<<rgbDirMask<<vstrImageFilenamesRGB[currIndex]<<endl;
+            // currFrame.rgb = cv::imread(rgbDirMask+vstrImageFilenamesRGB[currIndex]);
             // cv::imshow('img',currFrame.rgb);
             // cv::waitKey(0);
             // currFrame.rgb = cv::imread(rgbDirMask+to_string(currIndex) + rgbDirMaskExten);
