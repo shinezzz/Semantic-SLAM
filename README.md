@@ -12,8 +12,9 @@
 #### contribution
     1. 稠密建图的基础上融合语义信息进行稠密语义地图构建:稠密`slamDense.cpp`,语义`slam.cpp`
     2. 支持TUM数据集建图:稠密`slamTumDense.cpp`,语义`slamTum.cpp`，执行这两个文件需要输入参数
-    slamTum.cpp 读取处理tum数据集
+
 ```bash
+    slamTum.cpp 读取处理tum数据集
     ./bin/slamTum PATH/TO/ASSOCIATE
 ```
 #### TODO
