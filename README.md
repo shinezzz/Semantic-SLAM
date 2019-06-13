@@ -11,12 +11,10 @@
 
 #### contribution
     1. 稠密建图的基础上融合语义信息进行稠密语义地图构建:稠密`slamDense.cpp`,语义`slam.cpp`
-    2. 支持TUM数据集建图:稠密`slamTumDense.cpp`,语义`slamTum.cpp`，执行这两个文件需要输入[参数](#example)
-
-<a name = "example"></a>
+    2. 支持TUM数据集建图:稠密`slamTumDense.cpp`,语义`slamTum.cpp`，执行这两个文件需要输入参数
     slamTum.cpp 读取处理tum数据集
-    ```bash
+```bash
     ./bin/slamTum PATH/TO/ASSOCIATE
-    ```
+```
 #### TODO
     本来向通过C++程序里直接调用Mask R-CNN，也参考了`Dyna SLAM`等实现一个程序里实现调用的，还是没有成功，如果大佬不吝指教，不慎感激。
