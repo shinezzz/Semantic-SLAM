@@ -1,6 +1,7 @@
 ### Semantic Map
 这个程序其实并没有过多关注位姿，着重点在Map部分。主要是基于高博的[一起来做RGBD-SLAM](https://www.cnblogs.com/gaoxiang12/p/4633316.html)以及[Mask R-CNN](https://github.com/matterport/Mask_RCNN)进行创造。
- 
+### result picture
+![img](https://github.com/shinezzz/Semantic-SLAM/blob/master/result.png)
 #### REQUREMENT
 1. 需要安装：`pcl`,`opencv2`,`g2o`。
 2. 原有数据集顺序命名，如果要用TUM数据集，参考`script`生成`associtaion.txt`文件。
